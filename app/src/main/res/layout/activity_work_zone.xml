@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkZone">
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdf_view"
+        android:layout_width="411dp"
+        android:layout_height="518dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/lb_next"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:fontFamily="@font/roboto_black"
+        android:onClick="openNext"
+        android:text="@string/next"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pdf_view"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/lb_back"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:fontFamily="@font/roboto_black"
+        android:onClick="openBack"
+        android:text="@string/back"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_next"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
